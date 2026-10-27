@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#100d2b">
+    <meta name="description" content="A starry and sunny birthday adventure, made just for you.">
+    <title>Happy Birthday, Starrrr! 🌟</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="starfield" aria-hidden="true">
+      <span class="star star-a">✦</span><span class="star star-b">·</span><span class="star star-c">✧</span>
+      <span class="star star-d">·</span><span class="star star-e">✦</span><span class="star star-f">·</span>
+      <span class="star star-g">✧</span><span class="star star-h">·</span><span class="star star-i">✦</span>
+      <span class="star star-j">·</span><span class="star star-k">✧</span><span class="star star-l">·</span>
+      <span class="star star-m">✦</span><span class="star star-n">·</span><span class="star star-o">✧</span>
+      <span class="star star-p">·</span><span class="star star-q">✦</span><span class="star star-r">·</span>
+      <span class="star star-s">✧</span><span class="star star-t">·</span>
+    </div>
+
+    <header class="topbar">
+      <a class="brand" href="#letter"><span>✦</span> STARRRR'S BIRTHDAY</a>
+      <span class="top-note"><span class="online-dot"></span> A little journey through the stars</span>
+    </header>
+
+    <main>
+      <section class="screen screen-letter is-active" id="letter" aria-labelledby="letter-title">
+        <div class="letter-content">
+          <p class="eyebrow"><span>☀</span> A CELESTIAL SPECIAL DELIVERY <span>✦</span></p>
+          <h1 id="letter-title">A special delivery<br>from the <em>Sun</em><br>to the <em>Star</em></h1>
+          <p class="screen-copy" id="letter-copy">The Sun has sent a little something across the galaxy,<br>and it has your name written in stardust.</p>
+          <button class="envelope-button" id="open-envelope" type="button" aria-label="Open your birthday letter">
+            <span class="envelope-glow"></span>
+            <span class="envelope">
+              <span class="envelope-back"></span>
+              <span class="letter-paper"><span>From the Sun</span><span>To the Star</span></span>
+              <span class="envelope-left"></span>
+              <span class="envelope-right"></span>
+              <span class="envelope-bottom"></span>
+              <span class="envelope-flap"></span>
+              <span class="wax-seal">☀</span>
+            </span>
+            <span class="envelope-hint">OPEN YOUR SUN-KISSED LETTER</span>
+          </button>
+          <p class="tiny-note">Sent with sunshine, sealed with stardust.</p>
+        </div>
+      </section>
+
+      <section class="screen screen-surprise" id="surprise" aria-labelledby="surprise-title" hidden>
+        <div class="surprise-layout">
+          <div class="surprise-copy">
+            <p class="eyebrow"><span>✦</span> SECRET REVEALED</p>
+            <h1 id="surprise-title">Surprise!<br><em>It's your day.</em></h1>
+            <p class="screen-copy">If the universe had a favorite person, it would be you. Tonight, every little spark in the sky is here to celebrate your story.</p>
+            <div class="celebration-pills"><span>more laughter</span><span>big adventures</span><span>extra cake</span></div>
+            <a class="primary-button" href="#cake">Reveal your next surprise <span>✦</span></a>
+          </div>
+          <div class="surprise-picture">
+            <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span>
+            <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1000&q=85" alt="A bright celebration filled with colorful balloons">
+            <span class="picture-caption">A whole universe is celebrating you <span>✦</span></span>
+            <span class="picture-star">✦</span>
+            <span class="sunrise" aria-hidden="true"><span class="sun-disc">☀</span><span class="sunrise-label">YOU MAKE EVERY DAY BRIGHTER</span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen screen-cake" id="cake" aria-labelledby="cake-title" hidden>
+        <p class="eyebrow"><span>✦</span> YOUR BIRTHDAY MOMENT <span>✦</span></p>
+        <h1 id="cake-title">Readyyyy<br><em>Miss Falguniii!</em></h1>
+        <p class="screen-copy">Take a deep breath and blow out the candles!</p>
+        <div class="cake-scene">
+          <span class="cake-star cake-star-one">✦</span><span class="cake-star cake-star-two">✧</span>
+          <div class="birthday-cake" aria-label="A birthday cake with three lit candles">
+            <div class="candles">
+              <span class="candle"><i></i></span><span class="candle"><i></i></span><span class="candle"><i></i></span>
+            </div>
+            <div class="cake-icing"></div>
+            <div class="cake-layer cake-layer-top"></div>
+            <div class="cake-layer cake-layer-bottom"></div>
+            <div class="cake-plate"></div>
+          </div>
+          <div class="birthday-reveal" id="birthday-reveal" aria-live="polite" hidden>
+            <span class="celebration-burst" id="celebration-burst" aria-hidden="true"></span>
+            <span class="reveal-title">
+              <span class="reveal-happy">HAPPPYY <span class="reveal-emoji">🎉</span></span>
+              <span class="reveal-birthday">BIRTHDAY <span class="reveal-emoji">🎂</span></span>
+            </span>
+            <span class="reveal-starrrr">STARRRR <span class="reveal-emoji">🌟</span></span>
+          </div>
+        </div>
+        <button class="primary-button blow-button" id="blow-button" type="button">Blow out the candles <span>✧</span></button>
+        <a class="primary-button next-note" id="next-note" href="#note" hidden>Read your little note <span>→</span></a>
+        <p class="tiny-note" id="cake-hint">Tap the button to blow out the candles.</p>
+      </section>
+
+      <section class="screen screen-note" id="note" aria-labelledby="note-title" hidden>
+        <div class="note-card">
+          <span class="note-decoration note-decoration-top">✧</span>
+          <span class="note-icon">✉</span>
+          <p class="eyebrow">A LITTLE NOTE, FROM ME TO YOU</p>
+          <h1 id="note-title">To my favorite<br><em>and a special person.</em></h1>
+          <p class="note-message">Many more happy returns of the day Falll 🎂 I hope your day is filled with lots of laughter, beautiful moments, unexpected surprises, and all the things that make you happy. May this year bring you so much happiness, peace, success, and countless little reasons to smile. Keep being the amazing person you are, and never stop smiling that beautiful smile of yours. I hope life gives you all the happiness you truly deserve and makes your wishes come true. Keep shining jst the way you do 💖. Enjoy your special day to the fullest! Once again, happiest birthday, Falll✨</p>
+          <p class="note-signoff">So lucky to have you. <span>♥</span></p>
+          <span class="note-decoration note-decoration-bottom">✦</span>
+        </div>
+        <a class="restart-link" href="#letter">Take the journey again <span>↻</span></a>
+      </section>
+
+      <nav class="journey-nav" aria-label="Birthday journey">
+        <a href="#letter" aria-label="Letter" aria-current="page"><span>✉</span></a>
+        <i></i>
+        <a href="#surprise" aria-label="Surprise"><span>✦</span></a>
+        <i></i>
+        <a href="#cake" aria-label="Birthday cake"><span>♧</span></a>
+        <i></i>
+        <a href="#note" aria-label="Birthday note"><span>♡</span></a>
+      </nav>
+    </main>
+    <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+  </body>
+</html>
